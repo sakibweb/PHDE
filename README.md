@@ -6,14 +6,9 @@ PHDE provides methods for managing PHP error reporting, setting HTTP response he
 ### Creating PHDE Instance
 To create a PHDE instance and manage error reporting:
 ```
-$phde = new PHDE();
-$phde->yes(); // Enable error reporting
-$phde->no(); // Disable error reporting
-```
-You can also use static methods:
-```
-PHDE::yes(); // Enable error reporting
-PHDE::no(); // Disable error reporting
+PHDE::debug(true); // Enable error reporting
+// code here 
+PHDE::errors(true); // Enable displaying error reporting
 ```
 
 ### Setting HTTP Response Headers
